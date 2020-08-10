@@ -571,7 +571,7 @@ it('uses absolute path on request', () => {
     map: { inline: false, absolute: true }
   })
   expect(result.map.toJSON().sources).toEqual([
-    process.platform === 'win32' ? 'file:///C:/dir/a.css' : 'file:///dir/a.css'
+    process.platform === 'win32' ? 'file:///D:/dir/a.css' : 'file:///dir/a.css'
   ])
 })
 

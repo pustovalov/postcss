@@ -25,7 +25,8 @@
   ],
   "scripts": {
     "spell": "yaspeller-ci *.md docs/{**/,}*.md",
-    "test": "jest-ci --coverage && eslint-ci . && check-dts && ./test/integration.js && npm run spell && size-limit"
+    "test": "jest-ci --coverage && ./test/integration.js",
+    "lint": "eslint-ci . && check-dts && size-limit && npm run spell"
   },
   "funding": {
     "type": "tidelift",
